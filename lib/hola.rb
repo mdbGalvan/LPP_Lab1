@@ -12,8 +12,20 @@ class Hola
   end
   
   # Imprime por consola el valor del atributo, que será nuestro saludo
-  def printer ()
-    puts @saludo
+  def print ()
+    puts "Hola " + @saludo
+  end
+  
+  # Imprime por consola el valor del atributo, que será nuestro saludo
+  def print_World ()
+    puts "Hola Mundo!!!"
+  end
+  
+  # Imprime los saludos a todos los nombres que entran por argumento  
+  def print_Argument ()
+    ARGV.each do |a|
+      puts "Hola #{a}"
+    end
   end
   
 end
